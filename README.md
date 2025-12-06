@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Jobseeker - Job Listing Platform
 
-## Getting Started
+A modern, responsive job listing application built with React and Tailwind CSS. This project was developed as a frontend internship task to demonstrate CRUD operations, filtering logic, and high-fidelity UI replication.
 
-First, run the development server:
+Features
 
-```bash
+Job Management (CRUD):
+
+Create: Add new job postings with details like company logo, salary, and seniority.
+
+Read: View a comprehensive list of jobs with a clean, card-based layout.
+
+Update: Edit existing job details through a modal interface.
+
+Delete: Remove job postings with confirmation safeguards.
+
+Advanced Search & Filtering:
+
+Real-time Search: Filter jobs instantly by job title or company name.
+
+Multi-Category Filters: Filter by Job Type (Engineering, Design, etc.) and Employment Type (Full Time, Contract, etc.).
+
+User Interface:
+
+Responsive Design: Fully adaptive layout that works on mobile, tablet, and desktop.
+
+Modal Forms: Clean, backdrop-blurred modals for adding and editing content.
+
+Image Previews: Instant visual preview when uploading company logos.
+
+Tech Stack
+
+Frontend Framework: React (powered by Vite)
+
+Styling: Tailwind CSS (v3.4)
+
+Icons: Lucide React
+
+State Management: React Hooks (useState, useEffect, useMemo)
+
+Installation & Running Locally
+
+Follow these steps to get the project running on your local machine.
+
+Prerequisites
+
+Node.js (v14 or higher)
+
+npm (Node Package Manager)
+
+Step 1: Clone the Repository
+
+git clone <your-repo-url-here>
+cd job-listing-app
+
+
+Step 2: Install Dependencies
+
+npm install
+
+
+Step 3: Run the Development Server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open your browser and navigate to the URL shown in the terminal (usually http://localhost:5173).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Step 4: Build for Production
 
-## Learn More
+To create an optimized build for deployment:
 
-To learn more about Next.js, take a look at the following resources:
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Project Structure
 
-## Deploy on Vercel
+src/
+├── components/
+│   ├── JobModal.jsx    # Modal for adding/editing jobs (handles file previews)
+│   └── UI.jsx          # Reusable UI atoms (Buttons, Inputs, Selects)
+├── data.js             # Mock JSON data for initial application state
+├── App.jsx             # Main application logic (State, Filter Logic, Layout)
+├── index.css           # Tailwind directives and global styles
+└── main.jsx            # Application entry point
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Design Decisions
+
+Component Reusability: Common elements like Buttons and Inputs were abstracted into a UI.jsx file to maintain consistency and reduce code duplication.
+
+Tailwind CSS: Used for rapid UI development to strictly adhere to the provided design mockups (spacing, colors, rounded corners).
+
+Mock Data: The app uses a local JSON structure (data.js) to simulate API responses, allowing for immediate interaction without a backend.
+
