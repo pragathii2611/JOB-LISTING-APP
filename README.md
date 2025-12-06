@@ -1,96 +1,104 @@
-Jobseeker - Job Listing Platform
+# Jobseeker - Job Listing Platform
 
-A modern, responsive job listing application built with React and Tailwind CSS. This project was developed as a frontend internship task to demonstrate CRUD operations, filtering logic, and high-fidelity UI replication.
+A modern, responsive job listing application built with React and
+Tailwind CSS. This project was developed as a frontend internship task
+to demonstrate CRUD operations, advanced filtering, and high-fidelity UI
+replication.
 
-Features
+------------------------------------------------------------------------
 
-Job Management (CRUD):
+## Live Demo
 
-Create: Add new job postings with details like company logo, salary, and seniority.
+https://job-listing-jnxftms2i-pragathii2611s-projects.vercel.app/#
 
-Read: View a comprehensive list of jobs with a clean, card-based layout.
+------------------------------------------------------------------------
 
-Update: Edit existing job details through a modal interface.
+## Features
 
-Delete: Remove job postings with confirmation safeguards.
+### Job Management (CRUD)
 
-Advanced Search & Filtering:
+-   Create: Post new jobs with details like company logo, salary, and
+    seniority.
+-   Read: View a card-based list of all available job openings.
+-   Update: Edit existing job details via a seamless modal interface.
+-   Delete: Remove job postings with confirmation safeguards.
 
-Real-time Search: Filter jobs instantly by job title or company name.
+### Search & Filtering
 
-Multi-Category Filters: Filter by Job Type (Engineering, Design, etc.) and Employment Type (Full Time, Contract, etc.).
+-   Real-time Search: Instantly find jobs by title or company name.
+-   Multi-Category Filters: Filter by Job Type (Engineering, Design,
+    etc.), Employment Type, and Seniority Level.
 
-User Interface:
+### User Interface
 
-Responsive Design: Fully adaptive layout that works on mobile, tablet, and desktop.
+-   Responsive Design: Fully adaptive layout for mobile, tablet, and
+    desktop.
+-   Image Previews: Instant visual feedback when uploading company
+    logos.
+-   Modular Architecture: Clean separation of concerns with reusable
+    components.
 
-Modal Forms: Clean, backdrop-blurred modals for adding and editing content.
+------------------------------------------------------------------------
 
-Image Previews: Instant visual preview when uploading company logos.
+## Tech Stack & Tools
 
-Tech Stack
+-   Frontend Framework: React (Vite)
+-   Styling: Tailwind CSS v3
+-   Icons: Lucide React
+-   State Management: React Hooks (useState, useEffect, useMemo)
+-   Deployment: Vercel
 
-Frontend Framework: React (powered by Vite)
+------------------------------------------------------------------------
 
-Styling: Tailwind CSS (v3.4)
+## Installation & Running Locally
 
-Icons: Lucide React
+Follow these steps to set up the project on your local machine.
 
-State Management: React Hooks (useState, useEffect, useMemo)
+### 1. Clone the Repository
 
-Installation & Running Locally
+git clone https://github.com/pragathii2611/JOB-LISTING-APP.git\
+cd JOB-LISTING-APP
 
-Follow these steps to get the project running on your local machine.
-
-Prerequisites
-
-Node.js (v14 or higher)
-
-npm (Node Package Manager)
-
-Step 1: Clone the Repository
-
-git clone <your-repo-url-here>
-cd job-listing-app
-
-
-Step 2: Install Dependencies
+### 2. Install Dependencies
 
 npm install
 
-
-Step 3: Run the Development Server
+### 3. Start the Development Server
 
 npm run dev
 
+Open your browser and navigate to:\
+http://localhost:5173
 
-Open your browser and navigate to the URL shown in the terminal (usually http://localhost:5173).
+### 4. Build for Production
 
-Step 4: Build for Production
-
-To create an optimized build for deployment:
+To create an optimized production build:
 
 npm run build
 
+------------------------------------------------------------------------
 
-Project Structure
+## Project Structure
 
-src/
-├── components/
-│   ├── JobModal.jsx    # Modal for adding/editing jobs (handles file previews)
-│   └── UI.jsx          # Reusable UI atoms (Buttons, Inputs, Selects)
-├── data.js             # Mock JSON data for initial application state
-├── App.jsx             # Main application logic (State, Filter Logic, Layout)
-├── index.css           # Tailwind directives and global styles
-└── main.jsx            # Application entry point
+src/ ├── components/ │ ├── JobCard.jsx \# Individual job item display │
+├── JobModal.jsx \# Form for adding/editing jobs │ └── UI.jsx \#
+Reusable atoms (Buttons, Inputs) ├── data.js \# Mock JSON data for
+initial state ├── App.jsx \# Main application logic & layout └──
+main.jsx \# Entry point
 
+------------------------------------------------------------------------
 
-Design Decisions
+## Design Decisions
 
-Component Reusability: Common elements like Buttons and Inputs were abstracted into a UI.jsx file to maintain consistency and reduce code duplication.
+-   Tailwind CSS was chosen for its utility-first approach, allowing for
+    rapid development and strict adherence to the provided design
+    mockups.
+-   Mock Data (JSON) is used via data.js to simulate API responses,
+    ensuring the application is fully functional without a backend
+    dependency.
+-   Component Modularity ensures the UI is broken down into small,
+    reusable pieces (JobCard, UI.jsx) to improve readability and
+    maintainability.
 
-Tailwind CSS: Used for rapid UI development to strictly adhere to the provided design mockups (spacing, colors, rounded corners).
+------------------------------------------------------------------------
 
-Mock Data: The app uses a local JSON structure (data.js) to simulate API responses, allowing for immediate interaction without a backend.
-
-# JOB-LISTING-APP
