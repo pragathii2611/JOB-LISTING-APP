@@ -1,4 +1,3 @@
-// src/data.js
 export const initialJobs = [
   {
     id: 1,
@@ -17,7 +16,7 @@ export const initialJobs = [
     id: 2,
     title: "Sr. Frontend Engineer",
     company: "Avoban",
-    logo: null, // Optional logo 
+    logo: null, // Placeholder will be used
     date: "2023-07-06",
     jobType: "Developer",
     employmentType: "Part Time",
