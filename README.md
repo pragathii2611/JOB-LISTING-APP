@@ -93,3 +93,4 @@ Tailwind CSS: Used for rapid UI development to strictly adhere to the provided d
 
 Mock Data: The app uses a local JSON structure (data.js) to simulate API responses, allowing for immediate interaction without a backend.
 
+# JOB-LISTING-APP
